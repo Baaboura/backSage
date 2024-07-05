@@ -11,11 +11,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class FichierBancaire {
+public class Societe {
     @Id
     @GeneratedValue
     private Long id;
+    private String url;
     private String nom;
-    private String format;
-    private String contenu;
+    private String motdepasse;
 }

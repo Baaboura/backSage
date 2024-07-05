@@ -7,15 +7,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class FichierBancaire {
+public class EcritureComptable {
     @Id
     @GeneratedValue
     private Long id;
-    private String nom;
-    private String format;
-    private String contenu;
+    private String libelle;
+    private String reference;
+    private Float montant;
+    private String compte;
+    private Date date;
 }

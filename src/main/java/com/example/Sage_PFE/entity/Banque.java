@@ -17,5 +17,5 @@ public class Banque {
     private Long id;
     private String url;
     private String nom;
-    private String
+    private String motdepasse;
 }

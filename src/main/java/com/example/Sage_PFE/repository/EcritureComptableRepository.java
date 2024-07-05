@@ -1,10 +1,9 @@
 package com.example.Sage_PFE.repository;
 
-import com.example.Sage_PFE.entity.Banque;
+import com.example.Sage_PFE.entity.EcritureComptable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BanqueRepository extends JpaRepository<Banque,Long>{
-
+public interface EcritureComptableRepository extends JpaRepository<EcritureComptable,Long> {
 }
