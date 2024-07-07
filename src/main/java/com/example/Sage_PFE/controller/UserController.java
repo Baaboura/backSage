@@ -46,7 +46,7 @@ public class UserController {
     }
     @GetMapping("/getUsers/{id}")
     @PreAuthorize("hasAuthority('ADMIN_ROLES')")
-    public UserInfo getAllUsers(@PathVariable Long id){
+    public UserInfo getAllUsers(@PathVariable Integer id){
         return userInfoService.getUser(id);
     }
 }

@@ -38,7 +38,7 @@ public class UserInfoService implements UserDetailsService {
         return userInfoRepository.findAll();
     }
 
-    public UserInfo getUser(Long id){
+    public UserInfo getUser(Integer id){
         return userInfoRepository.findById(id).get();
     }
 
