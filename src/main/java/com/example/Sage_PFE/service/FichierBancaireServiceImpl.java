@@ -37,9 +37,13 @@ public class FichierBancaireServiceImpl implements FichierBancaireService {
     @Override
     public FichierBancaire updateFichierBancaire(FichierBancaire fichierbancaire) {
         FichierBancaire existingFichierBancaire = fichierbancaireRepository.findById(fichierbancaire.getId()).get() ;
-        existingFichierBancaire.setNom(fichierbancaire.getNom());
-        existingFichierBancaire.setFormat(fichierbancaire.getFormat());
-        existingFichierBancaire.setContenu(fichierbancaire.getContenu());
+        existingFichierBancaire.setCodeCompte(fichierbancaire.getCodeCompte());
+        existingFichierBancaire.setDevise(fichierbancaire.getDevise());
+        existingFichierBancaire.setRib(fichierbancaire.getRib());
+        existingFichierBancaire.setFileName(fichierbancaire.getFileName());
+        existingFichierBancaire.setDateDeCreation(fichierbancaire.getDateDeCreation());
+        existingFichierBancaire.setMontantInitial(fichierbancaire.getMontantInitial());
+        existingFichierBancaire.setMontantFinal(fichierbancaire.getMontantFinal());
 
         FichierBancaire updatedFichierBancaire = fichierbancaireRepository.save(existingFichierBancaire) ;
         return updatedFichierBancaire;
